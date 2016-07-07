@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div>
+    <div id="outter">
+        <div id="lightBox">
+            <!-- the buttons -->
+            <button id="exit" onclick="exit()" type="button">
+                X
+            </button>
+            <button id="next" onclick="next()" type="button">
+                >
+            </button>
+            <button id="previous" onclick="previous()" type="button">
+                <
+            </button>
+
+            <!-- photo -->
+            <img id="lightBoxImage" alt="photo">
+
+            <!-- photo title-->
+            <h2 id="title"></h2>
+
+        </div>
+    </div>
+
+    <h1>Lucy's Photo Gallery</h1>
+
+    <!--Photo search button-->
+    <div id="searchBox">
+        <form onsubmit="initialize(); return false;">
+            <h4>Search: <input id="request" type="text" placeholder="flower">
+                <input type="submit" value="Explore">
+            </h4>
+        </form>
+    </div>
+
+    <!-- display photos-->
+    <div id="gridArea">
+    </div>
+
+
+
+    <!--load js file-->
+    <script src="flicker.js"></script>
+
+</div>
+
+</body>
+</html>
